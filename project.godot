@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Dodge-the-creeps-3d"
-config/features=PackedStringArray("4.0", "Mobile")
-config/icon="res://icon.svg"
+config/name="Squash the Creeps (3D)"
+config/features=PackedStringArray("4.0")
+config/icon="res://icon.png"
 
 [rendering]
 
-renderer/rendering_method="mobile"
+quality/driver/driver_name="GLES2"
+quality/filters/msaa=3
