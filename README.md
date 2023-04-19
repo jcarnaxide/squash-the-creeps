@@ -1,2 +1,2 @@
-# dodge-the-creeps-3D
+# squash-the-creeps-3D
 My first 3D Godot project
