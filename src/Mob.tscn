@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://src/Mob.gd" id="1_yiudh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_316bb"]
-size = Vector3(1.48046, 0.8, 1.72571)
+size = Vector3(1.93854, 0.8, 2.36831)
 
 [node name="Mob" type="CharacterBody3D" groups=["mob"]]
 collision_layer = 2

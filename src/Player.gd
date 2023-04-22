@@ -1,8 +1,9 @@
 extends CharacterBody3D
 
+signal hit
+
 # How fast the player moves in meters per second.
 @export var speed = 14
-
 # The downward acceleration when in the air, in meters per second squared.
 @export var fall_acceleration = 75
 # Vertical impulse applied to the character upon jumping in meters per second.
@@ -64,3 +65,13 @@ func _physics_process(delta):
 				# If so, we squash it and bounce.
 				mob.squash()
 				target_velocity.y = bounce_impulse
+
+
+# And this function at the bottom.
+func die():
+	hit.emit()
+	queue_free()
+
+
+func _on_mob_detector_body_entered(body):
+	die()
